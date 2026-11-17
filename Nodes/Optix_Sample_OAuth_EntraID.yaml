@@ -1,0 +1,115 @@
+Name: Optix_Sample_OAuth_EntraID
+Type: ProjectFolder
+Children:
+- Name: Localization
+  Type: PropertyGroup
+  Children:
+  - Name: Locales
+    Type: BaseDataVariableType
+    DataType: LocaleId
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: ["en-US"]
+  - Name: LocaleFallbackList
+    Type: BaseDataVariableType
+    DataType: LocaleId
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: ["en-US"]
+- Name: Authentication
+  Type: PropertyGroup
+  Children:
+  - Name: DefaultUserFolder
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/Optix_Sample_OAuth_EntraID/Security/Users"
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/FolderType"
+  - Name: AuthenticationMode
+    Type: BaseDataVariableType
+    DataType: AuthenticationMode
+    Value: 5
+  - Name: Issuer
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "https://login.microsoftonline.com/<your Directory ID>/v2.0"
+  - Name: AuthorizationPath
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "/<your Directory ID>/oauth2/v2.0/authorize"
+  - Name: TokenPath
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "/<your Directory ID>/oauth2/v2.0/token"
+  - Name: JWKSPath
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "/<your Directory ID>/discovery/v2.0/keys"
+  - Name: RedirectURI
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "https://localhost/oauth2callback"
+  - Name: NameClaim
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "name"
+  - Name: GroupClaim
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "groups"
+  - Name: Domain
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "login.microsoftonline.com"
+  - Name: LogoutPath
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "/<your Directory ID>/oauth2/v2.0/logout"
+  - Name: AuthorizationFlow
+    Type: BaseDataVariableType
+    DataType: OAuth2AuthorizationFlow
+    Value: 1
+  - Name: AdditionalScopes
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "api://<your application id>/<your application expose name>"
+- Name: PasswordPolicy
+  Type: PasswordPolicy
+  Children:
+  - Name: MaximumPasswordAge
+    Type: BaseDataVariableType
+    DataType: UInt16
+  - Name: EnforcePasswordHistory
+    Type: BaseDataVariableType
+    DataType: Byte
+    Value: 1
+  - Name: MinimumPasswordAge
+    Type: BaseDataVariableType
+    DataType: UInt16
+  - Name: MinimumPasswordLength
+    Type: BaseDataVariableType
+    DataType: Byte
+    Value: 8
+- Name: AlarmConfiguration
+  Type: PropertyGroup
+- File: UI/UI.yaml
+- File: Model/Model.yaml
+- File: Converters/Converters.yaml
+- File: Alarms/Alarms.yaml
+- File: Recipes/Recipes.yaml
+- File: Loggers/Loggers.yaml
+- File: DataStores/DataStores.yaml
+- File: Reports/Reports.yaml
+- File: 'OPC-UA/OPC-UA.yaml'
+- File: CommDrivers/CommDrivers.yaml
+- File: NetLogic/NetLogic.yaml
+- File: Security/Security.yaml
+- File: System/System.yaml
+- File: Translations/Translations.yaml
+- File: Retentivity/Retentivity.yaml
+- Name: RuntimeOptimization
+  Type: PropertyGroup
+- File: HighAvailability/HighAvailability.yaml

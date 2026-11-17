@@ -1,0 +1,8 @@
+Name: Screens
+Type: FolderType
+Children:
+- Name: MyBaseScreen
+  Id: g=2206ec081f665b7bfd41de2160849481
+  Supertype: Screen
+  DisplayName: {"LocaleId":"en-US","Text":"Base Screen"}
+  ReferenceType: HasComponent

@@ -1,0 +1,24 @@
+Name: Groups
+Id: g=33ac98afcbbcd645bc8146197074cc43
+Type: GroupsCategoryFolder
+Children:
+- Name: '3d84e24b-c7c9-42ee-9d6c-220410138c78'
+  Id: g=70759561d1d34c439d6ae307fa9c112e
+  Type: GroupType
+  DisplayName: {"LocaleId":"en-US","Text":"Optix_Administrators"}
+- Name: 'de065a41-ed15-4425-b782-7e86d53e912d'
+  Id: g=358126bec2f9a97600ca14de78315e54
+  Type: GroupType
+  DisplayName: {"LocaleId":"en-US","Text":"Optix_Maintenence"}
+- Name: 'f26ea835-abfc-42e4-910b-18b9f5b75faa'
+  Id: g=f496ee197c850a045e0b9ee8db858572
+  Type: GroupType
+  DisplayName: {"LocaleId":"en-US","Text":"Optix_Quality"}
+- Name: '10bbd63b-1cae-4152-ad7b-ba86032821bb'
+  Id: g=5594339d2420de807a667d36356789bd
+  Type: GroupType
+  DisplayName: {"LocaleId":"en-US","Text":"Optix_Recipe_Management"}
+- Name: 'de748029-5dc8-456a-9a48-e23941217a62'
+  Id: g=6f3037641d9868d9907a1e715036a767
+  Type: GroupType
+  DisplayName: {"LocaleId":"en-US","Text":"Optix_Maintenence"}
